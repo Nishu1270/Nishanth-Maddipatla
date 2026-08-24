@@ -20,4 +20,4 @@ Allow: /
 User-agent: YandexBot
 Allow: /
 
-Sitemap: https://nishu1270.github.io/sitemap.xml
+Sitemap: https://nishanth-maddipatla-wx6y.vercel.app/sitemap.xml
