@@ -1,0 +1,89 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1920 1080" width="100%" height="100%" preserveAspectRatio="xMidYMid slice">
+  <defs>
+    <!-- Background Gradient -->
+    <radialGradient id="baseGreen" cx="50%" cy="40%" r="75%">
+      <stop offset="0%" stop-color="#2d5a27" />
+      <stop offset="35%" stop-color="#1b431e" />
+      <stop offset="70%" stop-color="#0e2812" />
+      <stop offset="100%" stop-color="#051408" />
+    </radialGradient>
+
+    <!-- Bokeh Light Gradients -->
+    <radialGradient id="bokehGlow1" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" stop-color="#e8f5e9" stop-opacity="0.85" />
+      <stop offset="30%" stop-color="#a5d6a7" stop-opacity="0.55" />
+      <stop offset="70%" stop-color="#66bb6a" stop-opacity="0.2" />
+      <stop offset="100%" stop-color="#2e7d32" stop-opacity="0" />
+    </radialGradient>
+
+    <radialGradient id="bokehGlow2" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" stop-color="#fff9c4" stop-opacity="0.75" />
+      <stop offset="40%" stop-color="#c8e6c9" stop-opacity="0.45" />
+      <stop offset="80%" stop-color="#81c784" stop-opacity="0.15" />
+      <stop offset="100%" stop-color="#388e3c" stop-opacity="0" />
+    </radialGradient>
+
+    <radialGradient id="bokehGlow3" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" stop-color="#a7f3d0" stop-opacity="0.65" />
+      <stop offset="50%" stop-color="#34d399" stop-opacity="0.3" />
+      <stop offset="100%" stop-color="#059669" stop-opacity="0" />
+    </radialGradient>
+
+    <!-- Blur Filters for soft organic bokeh -->
+    <filter id="bokehBlurLarge" x="-50%" y="-50%" width="200%" height="200%">
+      <feGaussianBlur stdDeviation="40" />
+    </filter>
+
+    <filter id="bokehBlurMedium" x="-50%" y="-50%" width="200%" height="200%">
+      <feGaussianBlur stdDeviation="22" />
+    </filter>
+
+    <filter id="bokehBlurSoft" x="-50%" y="-50%" width="200%" height="200%">
+      <feGaussianBlur stdDeviation="12" />
+    </filter>
+  </defs>
+
+  <!-- Deep Forest Green Background -->
+  <rect width="1920" height="1080" fill="url(#baseGreen)" />
+
+  <!-- Soft organic foliage shapes blurred -->
+  <g filter="url(#bokehBlurLarge)" opacity="0.6">
+    <ellipse cx="280" cy="320" rx="350" ry="260" fill="#2d6a4f" />
+    <ellipse cx="1650" cy="480" rx="420" ry="320" fill="#1b4332" />
+    <ellipse cx="980" cy="220" rx="500" ry="350" fill="#40916c" />
+    <ellipse cx="1250" cy="780" rx="380" ry="280" fill="#1e4620" />
+    <ellipse cx="450" cy="850" rx="440" ry="300" fill="#143618" />
+  </g>
+
+  <!-- Luminous Bokeh Orbs mimicking camera depth-of-field -->
+  <g filter="url(#bokehBlurMedium)">
+    <!-- Central Golden/Green Bokeh Light Center -->
+    <circle cx="1020" cy="380" r="140" fill="url(#bokehGlow2)" opacity="0.9" />
+    <circle cx="940" cy="440" r="95" fill="url(#bokehGlow1)" opacity="0.8" />
+    
+    <!-- Ambient floating bokeh bubbles -->
+    <circle cx="480" cy="260" r="110" fill="url(#bokehGlow1)" opacity="0.65" />
+    <circle cx="620" cy="190" r="70" fill="url(#bokehGlow2)" opacity="0.5" />
+    <circle cx="310" cy="480" r="85" fill="url(#bokehGlow3)" opacity="0.6" />
+    <circle cx="750" cy="620" r="120" fill="url(#bokehGlow1)" opacity="0.55" />
+    <circle cx="1380" cy="290" r="130" fill="url(#bokehGlow2)" opacity="0.7" />
+    <circle cx="1520" cy="410" r="90" fill="url(#bokehGlow1)" opacity="0.6" />
+    <circle cx="1260" cy="540" r="75" fill="url(#bokehGlow3)" opacity="0.5" />
+    <circle cx="1680" cy="220" r="105" fill="url(#bokehGlow2)" opacity="0.55" />
+    <circle cx="1580" cy="720" r="115" fill="url(#bokehGlow1)" opacity="0.45" />
+    <circle cx="220" cy="780" r="135" fill="url(#bokehGlow2)" opacity="0.5" />
+  </g>
+
+  <g filter="url(#bokehBlurSoft)">
+    <!-- Crisp near-field soft bokeh circles -->
+    <circle cx="990" cy="360" r="65" fill="#f0fff4" opacity="0.45" />
+    <circle cx="1060" cy="420" r="45" fill="#fffde7" opacity="0.55" />
+    <circle cx="510" cy="310" r="40" fill="#dcfce7" opacity="0.4" />
+    <circle cx="1420" cy="340" r="50" fill="#fef08a" opacity="0.35" />
+    <circle cx="790" cy="580" r="48" fill="#e2fbe8" opacity="0.3" />
+    <circle cx="1200" cy="490" r="38" fill="#d1fae5" opacity="0.4" />
+  </g>
+
+  <!-- Vignette Overlay -->
+  <rect width="1920" height="1080" fill="url(#baseGreen)" opacity="0.28" mix-blend-mode="multiply" />
+</svg>

@@ -1,0 +1,73 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 450" width="100%" height="100%">
+  <defs>
+    <linearGradient id="bgGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#0B132B" />
+      <stop offset="50%" stop-color="#1C2541" />
+      <stop offset="100%" stop-color="#0A1128" />
+    </linearGradient>
+    <linearGradient id="routeGrad1" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#00F0FF" stop-opacity="0.2" />
+      <stop offset="50%" stop-color="#00F0FF" stop-opacity="1" />
+      <stop offset="100%" stop-color="#FF8A65" stop-opacity="0.9" />
+    </linearGradient>
+    <linearGradient id="routeGrad2" x1="0%" y1="100%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#FFB74D" stop-opacity="0.3" />
+      <stop offset="50%" stop-color="#FF8A65" stop-opacity="0.9" />
+      <stop offset="100%" stop-color="#00F0FF" stop-opacity="0.8" />
+    </linearGradient>
+    <filter id="glow" x="-20%" y="-20%" width="140%" height="140%">
+      <feGaussianBlur stdDeviation="6" result="blur" />
+      <feMerge>
+        <feMergeNode in="blur" />
+        <feMergeNode in="SourceGraphic" />
+      </feMerge>
+    </filter>
+    <pattern id="grid" width="40" height="40" patternUnits="userSpaceOnUse">
+      <path d="M 40 0 L 0 0 0 40" fill="none" stroke="rgba(0, 240, 255, 0.08)" stroke-width="1" />
+    </pattern>
+  </defs>
+
+  <!-- Background Base -->
+  <rect width="800" height="450" fill="url(#bgGrad)" />
+  <rect width="800" height="450" fill="url(#grid)" />
+
+  <!-- Ambient Light Orbs -->
+  <circle cx="250" cy="180" r="160" fill="rgba(0, 240, 255, 0.12)" filter="url(#glow)" />
+  <circle cx="580" cy="260" r="180" fill="rgba(255, 138, 101, 0.15)" filter="url(#glow)" />
+
+  <!-- Highway Telemetry Routes -->
+  <path d="M 120 380 Q 220 280 340 240 T 560 180 T 720 120" fill="none" stroke="url(#routeGrad1)" stroke-width="4" stroke-linecap="round" filter="url(#glow)" />
+  <path d="M 80 180 Q 240 160 380 260 T 640 320 T 760 280" fill="none" stroke="url(#routeGrad2)" stroke-width="3" stroke-dasharray="8 6" stroke-linecap="round" filter="url(#glow)" />
+  <path d="M 340 240 L 380 260 L 460 140 L 560 180" fill="none" stroke="rgba(255, 255, 255, 0.4)" stroke-width="1.5" stroke-dasharray="4 4" />
+
+  <!-- Logistics Hub Nodes -->
+  <!-- Hub 1 (Delhi/North) -->
+  <circle cx="340" cy="150" r="9" fill="#00F0FF" filter="url(#glow)" />
+  <circle cx="340" cy="150" r="18" fill="none" stroke="rgba(0, 240, 255, 0.5)" stroke-width="1.5" />
+  
+  <!-- Hub 2 (Mumbai/West) -->
+  <circle cx="240" cy="270" r="11" fill="#FF8A65" filter="url(#glow)" />
+  <circle cx="240" cy="270" r="22" fill="none" stroke="rgba(255, 138, 101, 0.5)" stroke-width="1.5" />
+
+  <!-- Hub 3 (Bangalore/South) -->
+  <circle cx="380" cy="360" r="10" fill="#00F0FF" filter="url(#glow)" />
+  <circle cx="380" cy="360" r="20" fill="none" stroke="rgba(0, 240, 255, 0.5)" stroke-width="1.5" />
+
+  <!-- Hub 4 (Kolkata/East) -->
+  <circle cx="580" cy="210" r="10" fill="#FFB74D" filter="url(#glow)" />
+  <circle cx="580" cy="210" r="20" fill="none" stroke="rgba(255, 183, 77, 0.5)" stroke-width="1.5" />
+
+  <!-- Active Telemetry Pingers -->
+  <circle cx="480" cy="200" r="5" fill="#FFFFFF" filter="url(#glow)" />
+  <circle cx="480" cy="200" r="12" fill="none" stroke="#FFFFFF" stroke-opacity="0.6" stroke-width="1" />
+
+  <!-- Telemetry HUD Graphics -->
+  <g transform="translate(40, 40)" opacity="0.9">
+    <rect x="0" y="0" width="145" height="28" rx="6" fill="rgba(0, 240, 255, 0.15)" stroke="rgba(0, 240, 255, 0.5)" stroke-width="1" />
+    <text x="12" y="18" font-family="'JetBrains Mono', monospace" font-size="11" font-weight="700" fill="#00F0FF" letter-spacing="1">LIVE FLEET: 99.4%</text>
+  </g>
+  <g transform="translate(615, 40)" opacity="0.9">
+    <rect x="0" y="0" width="145" height="28" rx="6" fill="rgba(255, 138, 101, 0.15)" stroke="rgba(255, 138, 101, 0.5)" stroke-width="1" />
+    <text x="12" y="18" font-family="'JetBrains Mono', monospace" font-size="11" font-weight="700" fill="#FFAB91" letter-spacing="1">ROUTE OPTIMIZED</text>
+  </g>
+</svg>
