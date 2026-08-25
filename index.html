@@ -22,6 +22,9 @@
   <meta name="application-name" content="Nishanth Portfolio" />
   <meta name="apple-mobile-web-app-title" content="Nishanth Portfolio" />
 
+  <!-- Preload Hero LCP Image for 100 Performance Score -->
+  <link rel="preload" as="image" href="assets/images/regenerated_image_1786465012032.png" fetchpriority="high" />
+
   <!-- Favicon & Search Profile Photo (Round Circular Icon for Google Search) -->
   <link rel="icon" type="image/x-icon" href="/favicon.ico?v=2" />
   <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png?v=2" />
@@ -138,7 +141,7 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500;600;700&family=Outfit:wght@400;500;600;700;800;900&family=Playfair+Display:ital,wght@0,600;0,700;0,800;0,900;1,600;1,700&family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
 
-  <link rel="stylesheet" href="styles.css?v=49.0" />
+  <link rel="stylesheet" href="styles.css?v=50.0" />
   
   <style>
     /* Direct Vision & Mission Section Styles (Cinematic Ocean Background Photo - Clean Floating Text) */
@@ -421,6 +424,9 @@
             src="assets/images/regenerated_image_1786535628064.webp"
             alt="Maddipatla Nishanth"
             class="header-avatar-img"
+            width="44"
+            height="44"
+            loading="eager"
           />
         </div>
         <div class="brand-text-block">
@@ -464,6 +470,10 @@
                 src="assets/images/regenerated_image_1786465012032.png"
                 alt="Maddipatla Venkat Nishanth"
                 class="hero-portrait-img"
+                width="557"
+                height="435"
+                fetchpriority="high"
+                loading="eager"
               />
             </div>
           </div>
@@ -579,6 +589,9 @@
                       src="assets/images/about_nishanth_8k.jpg"
                       alt="Nishanth Maddipatla"
                       class="editorial-single-img"
+                      width="400"
+                      height="500"
+                      loading="lazy"
                     />
                   </div>
                 </div>
@@ -637,7 +650,7 @@
                       title="Click to Download Official Resume PDF"
                     >
                       <div class="stat-icon-circle icon-resume">
-                        <img src="assets/images/icon_resume_doc.png" alt="Resume PDF Icon" class="custom-stat-img-icon resume-icon-img" />
+                        <img src="assets/images/icon_resume_doc.png" alt="Resume PDF Icon" class="custom-stat-img-icon resume-icon-img" width="28" height="28" loading="lazy" />
                       </div>
                       <div class="stat-main-number">Resume</div>
                       <div class="stat-sub-label">Curriculum Vitae</div>
@@ -647,7 +660,7 @@
                     <!-- Stat 2: CodeChef (Golden Star) -->
                     <div class="editorial-stat-item interactive-stat" id="open-codechef-btn" role="button" tabindex="0" title="Click to view CodeChef Profile">
                       <div class="stat-icon-circle icon-codechef">
-                        <img src="assets/images/icon_star_gold.png" alt="3-Star Golden Logo" class="custom-stat-img-icon star-icon-img" />
+                        <img src="assets/images/icon_star_gold.png" alt="3-Star Golden Logo" class="custom-stat-img-icon star-icon-img" width="28" height="28" loading="lazy" />
                       </div>
                       <div class="stat-main-number">3-Star</div>
                       <div class="stat-sub-label">CodeChef @nishu1270</div>
@@ -849,7 +862,7 @@
           <div class="cinema-frame-item frame-top-left" data-depth="0.04" data-index="0" data-title="Debate" data-caption="A debate experience that strengthened my confidence, communication, and ability to express ideas.">
             <div class="film-border-wrapper border-widescreen">
               <div class="film-photo-inner">
-                <img src="assets/images/story_debate.jpg" alt="Debate" class="cinema-photo-img" />
+                <img src="assets/images/story_debate.jpg" alt="Debate" class="cinema-photo-img" width="400" height="280" loading="lazy" />
                 <div class="film-timestamp">COMMUNICATION</div>
                 <div class="film-caption-overlay">
                   <span class="film-title">Debate</span>
@@ -862,7 +875,7 @@
           <div class="cinema-frame-item frame-top-center" data-depth="0.02" data-index="1" data-title="Cultural Events" data-caption="A memorable college event where I turned ideas into action through teamwork and leadership.">
             <div class="film-border-wrapper border-widescreen">
               <div class="film-photo-inner">
-                <img src="assets/images/story_cultural_events.jpg" alt="Cultural Events" class="cinema-photo-img" />
+                <img src="assets/images/story_cultural_events.jpg" alt="Cultural Events" class="cinema-photo-img" width="400" height="280" loading="lazy" />
                 <div class="film-timestamp">SASI AUTONOMOUS</div>
                 <div class="film-caption-overlay">
                   <span class="film-title">Cultural Events</span>
@@ -875,7 +888,7 @@
           <div class="cinema-frame-item frame-top-right" data-depth="0.05" data-index="2" data-title="Plantation Drive" data-caption="Contributing to a greener future through a meaningful plantation drive.">
             <div class="film-border-wrapper border-widescreen">
               <div class="film-photo-inner">
-                <img src="assets/images/story_plantation_drive.jpg" alt="Plantation Drive" class="cinema-photo-img" />
+                <img src="assets/images/story_plantation_drive.jpg" alt="Plantation Drive" class="cinema-photo-img" width="400" height="280" loading="lazy" />
                 <div class="film-timestamp">NSS DRIVE</div>
                 <div class="film-caption-overlay">
                   <span class="film-title">Plantation Drive</span>
@@ -888,7 +901,7 @@
           <div class="cinema-frame-item frame-mid-left" data-depth="0.06" data-index="3" data-title="Blood Donation Camp" data-caption="Coordinated a blood donation camp, connecting with officials and contributing to a meaningful community initiative.">
             <div class="film-border-wrapper border-widescreen">
               <div class="film-photo-inner">
-                <img src="assets/images/story_blood_donation.jpg" alt="Blood Donation Camp" class="cinema-photo-img" />
+                <img src="assets/images/story_blood_donation.jpg" alt="Blood Donation Camp" class="cinema-photo-img" width="400" height="280" loading="lazy" />
                 <div class="film-timestamp">COMMUNITY INITIATIVE</div>
                 <div class="film-caption-overlay">
                   <span class="film-title">Blood Donation Camp</span>
@@ -901,7 +914,7 @@
           <div class="cinema-frame-item frame-mid-right" data-depth="0.03" data-index="4" data-title="Anveshana" data-caption="Hosted a brick challenge stall at Anveshana, where I interacted with our Chairman and engaged with students through the event.">
             <div class="film-border-wrapper border-widescreen">
               <div class="film-photo-inner">
-                <img src="assets/images/story_anveshana.jpg" alt="Anveshana" class="cinema-photo-img" />
+                <img src="assets/images/story_anveshana.jpg" alt="Anveshana" class="cinema-photo-img" width="400" height="280" loading="lazy" />
                 <div class="film-timestamp">ANVESHANA FEST</div>
                 <div class="film-caption-overlay">
                   <span class="film-title">Anveshana</span>
@@ -914,7 +927,7 @@
           <div class="cinema-frame-item frame-bottom-left" data-depth="0.05" data-index="5" data-title="Google Hackathon" data-caption="Participated in a Google hackathon, turning innovative ideas into practical solutions for real-world challenges.">
             <div class="film-border-wrapper border-widescreen">
               <div class="film-photo-inner">
-                <img src="assets/images/story_google_hackathon.jpg" alt="Google Hackathon" class="cinema-photo-img" />
+                <img src="assets/images/story_google_hackathon.jpg" alt="Google Hackathon" class="cinema-photo-img" width="400" height="280" loading="lazy" />
                 <div class="film-timestamp">GOOGLE HACKATHON</div>
                 <div class="film-caption-overlay">
                   <span class="film-title">Google Hackathon</span>
@@ -978,6 +991,9 @@
               src="assets/images/regenerated_image_1786535628064.webp"
               alt="Maddipatla Venkat Nishanth"
               class="contact-avatar-photo"
+              width="162"
+              height="162"
+              loading="lazy"
             />
           </div>
 
@@ -1362,6 +1378,9 @@
               src="assets/images/regenerated_image_1786535628064.webp"
               alt="Maddipatla Venkat Nishanth"
               class="drawer-avatar-img"
+              width="162"
+              height="162"
+              loading="lazy"
             />
           </div>
           <div class="drawer-profile-info">
@@ -1468,7 +1487,7 @@
       </div>
 
       <div class="cert-image-preview-container">
-        <img id="cert-display-img" src="" alt="Certificate" class="cert-display-image" />
+        <img id="cert-display-img" src="assets/images/certificate_prayatna_2.png" alt="Certificate" class="cert-display-image" width="600" height="420" loading="lazy" />
         <iframe id="cert-display-iframe" src="" class="cert-display-iframe" hidden></iframe>
       </div>
     </div>
@@ -1513,6 +1532,9 @@
                 src="assets/images/resume_maddipatla_venkat_nishanth.png?v=2.0"
                 alt="Maddipatla Venkat Nishanth — Official Resume"
                 class="resume-document-image"
+                width="600"
+                height="850"
+                loading="lazy"
               />
             </iframe>
           </object>
@@ -1544,7 +1566,7 @@
           </svg>
         </button>
         <div class="photo-lightbox-img-wrap">
-          <img id="photo-lightbox-img" src="" alt="Photo Preview" class="photo-lightbox-image" />
+          <img id="photo-lightbox-img" src="assets/images/story_anveshana.jpg" alt="Photo Preview" class="photo-lightbox-image" width="600" height="420" loading="lazy" />
         </div>
         <div class="photo-lightbox-bottom-bar">
           <h4 id="photo-lightbox-title" class="photo-lightbox-title"></h4>
@@ -1554,6 +1576,6 @@
     </div>
   </div>
 
-  <script src="app.js?v=8.0"></script>
+  <script src="app.js?v=9.0"></script>
 </body>
 </html>

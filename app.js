@@ -726,6 +726,14 @@ function initCinematicStoryGallery() {
 
   const MEDIUM_SPEED = 0.0022; // Steady, smooth medium speed with or without cursor
 
+  let containerWidth = canvasContainer.clientWidth || window.innerWidth;
+  let containerHeight = canvasContainer.clientHeight || 840;
+
+  window.addEventListener("resize", () => {
+    containerWidth = canvasContainer.clientWidth || window.innerWidth;
+    containerHeight = canvasContainer.clientHeight || 840;
+  }, { passive: true });
+
   // Orbit animation loop
   function animateOrbit() {
     cursorSteer += (targetSteer - cursorSteer) * 0.06;
@@ -737,9 +745,6 @@ function initCinematicStoryGallery() {
       currentAngle += dragVelocity;
       dragVelocity *= 0.94; // inertia damping
     }
-
-    const containerWidth = canvasContainer.clientWidth || window.innerWidth;
-    const containerHeight = canvasContainer.clientHeight || 840;
     
     // Dynamic elliptical radii reactive to vertical cursor tilt
     const rx = Math.min(containerWidth * 0.42, 540);
