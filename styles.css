@@ -2787,8 +2787,34 @@ body.intro-active {
   transition: color var(--transition-fast);
 }
 
-.back-to-top:hover {
-  color: var(--accent-orange);
+/* ============================================================
+   LIGHTHOUSE 100 SEO & A11Y TAP TARGET OPTIMIZATIONS
+   ============================================================ */
+a, button, [role="button"], input, select, textarea {
+  touch-action: manipulation;
+}
+
+@media (max-width: 768px) {
+  .header-circle-menu-btn,
+  .mobile-nav-link,
+  .capsule-nav-item,
+  .project-live-btn,
+  .project-github-btn,
+  .editorial-contact-btn,
+  .editorial-ghost-btn,
+  .drawer-close-btn,
+  .modal-close-btn,
+  .photo-lightbox-back-btn,
+  .photo-lightbox-close-btn,
+  .back-to-top,
+  .footer-mail-copy,
+  .btn-outline-sm {
+    min-height: 48px;
+    min-width: 48px;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+  }
 }
 
 /* ============================================================
