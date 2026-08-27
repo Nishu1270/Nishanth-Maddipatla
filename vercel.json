@@ -1,0 +1,17 @@
+{
+  "cleanUrls": true,
+  "trailingSlash": false,
+  "redirects": [
+    {
+      "source": "/(.*)",
+      "has": [
+        {
+          "type": "host",
+          "value": "nishanth-maddipatla-wx6y.vercel.app"
+        }
+      ],
+      "destination": "https://nishanthmaddipatla.co.in/$1",
+      "permanent": true
+    }
+  ]
+}

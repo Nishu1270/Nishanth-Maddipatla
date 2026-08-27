@@ -20,4 +20,4 @@ Allow: /
 User-agent: YandexBot
 Allow: /
 
-Sitemap: https://nishanth-maddipatla-wx6y.vercel.app/sitemap.xml
+Sitemap: https://nishanthmaddipatla.co.in/sitemap.xml
